@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.119">
+  <ExportedFolder Id="dd3bc5bc-1c10-4fdc-9af8-df71c2a5c053" Name="特供绿材" Enabled="false">
+    <Folders>
+      <Folder Id="4ba9ca80-9bdc-42fa-bc2f-d3163793cf00" Name="巡航采集" Enabled="true">
+        <Folders>
+          <Folder Id="72825112-a436-4003-b2a8-2601b776b84d" Name="灵飞电" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="灵飞电" Id="4706e438-0bf7-45e2-8217-a55bc8aef58b" RegularExpression="^.{26}003B::在(?&lt;方位&gt;..?)感知到了80级的梦幻的石场！">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/gs change 38" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="normalcommand" NamedCallbackParam="/visland execonce 灵电挖矿" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 丛林之相" ActionType="NamedCallback" ExecutionDelayExpression="10000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="f6ccbaa8-a535-4df5-ad53-47d20159636f" Name="灵罡风" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="灵罡风" Id="5ba63bd6-fecd-4d32-9168-b4165f845012" RegularExpression="^.{26}003B::在(?&lt;方位&gt;..?)感知到了80级的梦幻的良材！">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/gs change 39" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="normalcommand" NamedCallbackParam="/visland execonce 灵风伐木" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 山岳之相" ActionType="NamedCallback" ExecutionDelayExpression="10000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="c7226543-6568-478f-9a13-e92e8d183f0e" Name="灵烈火" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="灵烈火" Id="c92aeaed-b393-4d6a-bf5d-fd81faa3f399" RegularExpression="^.{26}003B::在(?&lt;方位&gt;..?)感知到了80级的梦幻的矿脉！">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/gs change 38" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="normalcommand" NamedCallbackParam="/visland execonce 灵火挖矿" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 丛林之相" ActionType="NamedCallback" ExecutionDelayExpression="10000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="3cfe002d-0ab6-4576-a2f9-16c7678becbd" Name="灵飘尘" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="灵飘尘" Id="a545d42c-6508-4994-ae71-1c5e3c1ba6ba" RegularExpression="^.{26}003B::在(?&lt;方位&gt;..?)感知到了80级的梦幻的草场！">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/gs change 39" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="normalcommand" NamedCallbackParam="/visland execonce 灵尘伐木" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/ac 山岳之相" ActionType="NamedCallback" ExecutionDelayExpression="10000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers />
+      </Folder>
+      <Folder Id="db5d7b28-6636-4177-b83e-7ecd48bbf7e3" Name="进退副本" Enabled="false">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="自动进本" Id="5fb4074a-7503-4c69-9edd-ce28bfcff7de" RegularExpression="^.{26}0039::进入了休息区。">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="normalcommand" NamedCallbackParam="/visland execonce 进本" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="自动退本" Id="0d818431-4cbd-4217-8852-dbff3bd38eaa" RegularExpression="^.{26}0843::(?&lt;类型&gt;.+)从眼前消失了……$">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="normalcommand" NamedCallbackParam="/leaveduty" UseTTSTextExpression="/pdfleave" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="3d43b949-1d50-4398-ac43-d9a219697cb1" Name="开关技能" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="开启丛林" Id="aa5e4505-8ea0-4d53-9080-30145c85bbd0" RegularExpression="^.{26}08B0::(?&lt;名字&gt;.+)的“丛林之相”状态效果消失了。">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/ac 丛林之相" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="开启山岳" Id="c1e2f813-2e8e-40f6-ae44-f1dfcee0c7ef" RegularExpression="^.{26}08B0::(?&lt;名字&gt;.+)的“山岳之相”状态效果消失了。">
+            <Actions>
+              <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/ac 山岳之相" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="56edb71c-c6f9-4839-b0ee-4669422c6657" Name="指令开关" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="开始钓鱼" Id="1db02fe3-92ee-4bc6-8a9e-9490b8dbb356" RegularExpression="1919810">
+            <Actions>
+              <Action OrderNumber="1" FolderId="db5d7b28-6636-4177-b83e-7ecd48bbf7e3" ActionType="Folder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="开了" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="关闭钓鱼" Id="4ab508e2-aa75-44f6-a71b-fb0bee6649a1" RegularExpression="114514">
+            <Actions>
+              <Action OrderNumber="1" FolderOp="DisableFolder" FolderId="db5d7b28-6636-4177-b83e-7ecd48bbf7e3" ActionType="Folder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="关了" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers />
+  </ExportedFolder>
+</TriggernometryExport>
